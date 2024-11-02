@@ -1,20 +1,12 @@
 <?php
 include 'koneksi.php';
-// Capture JSON input from Insomnia
-$input = json_decode(file_get_contents('php://input'), true);
+
+$nim = $_POST['nim'];
+$password = $_POST['password'];
 
 
-if ($input === null) {
-    echo json_encode(["status" => "error", "message" => "Invalid JSON input."]);
-    exit;
-}
-
-$email = $input['email'];
-$password = $input['password'];
-
-
-$query = "SELECT * FROM [USER] WHERE email = ? AND password = ?"; 
-$params = [$email, $password];
+$query = "SELECT * FROM [USER] WHERE nim = ? AND password = ?"; 
+$params = [$nim, $password];
 $stmt = sqlsrv_query($koneksi, $query, $params);
 
 if ($stmt === false) {
@@ -31,7 +23,7 @@ if ($user) {
         "role" => $user['ROLE'] 
     ]);
 } else {
-    echo json_encode(["status" => "error", "message" => "Invalid username or password."]);
+    echo json_encode(["status" => "error", "message" => "Invalid nim or password."]);
 }
 
 ?>
