@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'koneksi.php';
 
 $nim = $_POST['nim'];
@@ -16,6 +17,11 @@ if ($stmt === false) {
 
 $user = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC);
 if ($user) {
+    $_SESSION['user'] =[
+        'nim' => $user['nim'],
+        'nama' => $user['nama'],
+        'role' => $user['role'], 
+    ];
 
     echo json_encode([
         "status" => "success",
