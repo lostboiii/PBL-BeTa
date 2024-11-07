@@ -145,7 +145,7 @@ go
 /*==============================================================*/
 create table "USER" (
    ID                   int                  not null,
-   PASSWORD             varchar(15)          null,
+   PASSWORD             varchar(100)         null,
    EMAIL                varchar(100)         null,
    JENIS_KELAMIN        bit                  null,
    NO_HP                varchar(15)          null,
@@ -153,6 +153,9 @@ create table "USER" (
    ALAMAT               varchar(200)         null,
    USERNAME             varchar(100)         null,
    ROLE                 varchar(20)          null,
+   reset_token          VARCHAR(255)         null,
+   reset_token_expiry   DATETIME             null,
+   foto                 VARCHAR(255)         null,
    constraint PK_USER primary key nonclustered (ID)
 )
 go
