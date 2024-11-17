@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -8,7 +7,7 @@
 </head>
 <body>
     <h1>Reset Kata Sandi</h1>
-    <form action="password_reset_request.php?token=<?php echo htmlspecialchars($_GET['token']); ?>" method="POST">
+    <form action="/password-reset?token=<?php echo htmlspecialchars($_GET['token']); ?>" method="POST">
         <label for="new_password">Kata Sandi Baru:</label>
         <input type="password" id="new_password" name="new_password" required>
         <br>
