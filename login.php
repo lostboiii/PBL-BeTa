@@ -34,7 +34,7 @@ if ($user) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sistem Bebas Tanggungan</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styleslogin.css">
 </head>
 <body>
   <div class="login-container">
