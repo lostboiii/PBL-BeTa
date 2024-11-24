@@ -42,14 +42,18 @@
     .content {
       margin-left: 200px; 
       width: calc(100% - 200px);
-      padding-top: 20px; /* to prevent content overlap with header */
-      padding-bottom: 50px; /* space for footer */
+      padding: 20px;
+      /*padding-top: 20px; /* to prevent content overlap with header */
+      /*padding-bottom: 50px; /* space for footer */
     }
 
     .hero-section {
-      background-color: #F4F6F8; 
-      padding: 20px;
+      background: url('RuanganDashboard.png') center/cover no-repeat;
+      padding: 80px 20px;
       border-radius: 10px;
+    }
+    .hero-section h1, .hero-section p {
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
 
     footer {
@@ -71,7 +75,7 @@
     <!-- Sidebar -->
     <nav class="sidebar">
       <div class="text-center py-4">
-        <img src="logo.png" alt="Logo SiBTAN" class="logo mb-3">
+        <img src="designLogo.png" alt="Logo SiBTAN" class="logo mb-3">
         <h4>SiBTAN</h4>
       </div>
       <ul class="nav flex-column px-3">
