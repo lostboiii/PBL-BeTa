@@ -20,27 +20,36 @@
       height: 100vh;
       top: 0; /* ensure sidebar is aligned with the top */
       left: 0;
+      padding-top: 0.10px;
     }
 
     .sidebar .nav-link {
       color: white;
       font-weight: 500;
-      padding: 10px 15px;
+      padding: 10px 20px;
     }
 
-    .sidebar .nav-link.active, .sidebar .nav-link:hover {
+    .sidebar .nav-link.active, .sidebar .nav-link:hover{
       background-color: #00509E; 
       color: white;
-      border-radius: 5px;
+      padding: 3px 6px;
+      border-radius: 8px;
+      font-size: 15px;
+      margin-top: -4px;
+      margin-bottom: -1px;
+      
     }
-
     .sidebar .logo {
-      width: 100px;
+      width: 80px;
+      margin-top: -20px;
     }
-
+    h5{
+      margin-top: -20px;
+      margin-left: 200px;
+    }
     /* Main Content styling */
     .content {
-      margin-left: 200px; 
+      margin-left: 10px; 
       width: calc(100% - 200px);
       padding: 20px;
       /*padding-top: 20px; /* to prevent content overlap with header */
@@ -49,24 +58,22 @@
 
     .hero-section {
       background: url('RuanganDashboard.png') center/cover no-repeat;
-      padding: 80px 20px;
+      padding: 60px 20px;
       border-radius: 10px;
+      margin-left: 200px;
     }
     .hero-section h1, .hero-section p {
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     }
 
     footer {
-      font-size: 0.9rem;
-      background-color: #043873;
-      color: white;
+      font-size: 0.8rem;
+      margin-left: 550px;
+      margin-right: auto;
+      color: grey;
       position: relative;
       width: 100%;
       bottom: 0;
-    }
-
-    .copyright-text {
-     margin-left: 100px; 
     }
   </style>
 </head>
@@ -76,7 +83,7 @@
     <nav class="sidebar">
       <div class="text-center py-4">
         <img src="designLogo.png" alt="Logo SiBTAN" class="logo mb-3">
-        <h4>SiBTAN</h4>
+        <h5 style="margin-left: -4px;">SiBTAN</h5>
       </div>
       <ul class="nav flex-column px-3">
         <li class="nav-item my-2">
@@ -84,32 +91,32 @@
             <i class="bi bi-house-door-fill me-2"></i> Home
           </a>
         </li>
-        <li class="nav-item my-2">
+        <li class="nav-item">
           <a href="#" class="nav-link">
             <i class="bi bi-person-fill me-2"></i> Profile
           </a>
         </li>
-        <li class="nav-item my-2">
+        <li class="nav-item">
           <a href="#" class="nav-link">
             <i class="bi bi-list-task me-2"></i> Tata Cara
           </a>
         </li>
-        <li class="nav-item my-2">
+        <li class="nav-item">
           <a href="#" class="nav-link">
             <i class="bi bi-folder-fill me-2"></i> Dataku
           </a>
         </li>
-        <li class="nav-item my-2">
+        <li class="nav-item" >
           <a href="#" class="nav-link">
             <i class="bi bi-info-circle-fill me-2"></i> Info Data
           </a>
         </li>
-        <li class="nav-item my-2">
+        <li class="nav-item">
           <a href="#" class="nav-link">
             <i class="bi bi-box-arrow-right me-2"></i> Logout
           </a>
         </li>
-        <li class="nav-item my-2">
+        <li class="nav-item">
           <a href="#" class="nav-link">
             <i class="bi bi-telephone-fill me-2"></i> Call Center
           </a>
@@ -119,18 +126,18 @@
 
     <!-- Main Content -->
     <div class="content flex-grow-1">
-      <header class="bg-light py-3 px-4 border-bottom">
+      <header class="bg-light py-3 px-4 border-bottom border-top margin-left: 200px;" style="text-align: center;">
         <h5 class="m-0">Sistem Informasi Bebas Tanggungan</h5>
       </header>
       <div class="p-4">
         <div class="hero-section text-center mb-4">
-          <h2 style="color:#FFE492" >Sistem Bebas Tanggungan</h2>
+          <h2 style="color:#FFE492; text-align:center;" >Sistem Bebas Tanggungan</h2>
           <p style="color:#FFE492">Jurusan Teknologi Informasi</p>
-          <img src="building.jpg" alt="Gedung Kampus" class="img-fluid rounded" style="max-width: 600px;">
+          <!--<img src="RuanganDashboard.png" class="img-fluid rounded mx-auto d-block background-cover-img" style="max-width: 600px;" alt="Ruangan Dashboard">-->
         </div>
         <section class="info-section text-center">
-          <h4 style="color:#043873">Profil Sistem Bebas Tanggungan</h4>
-          <p style="color:#043873">
+          <h4 style="color:#043873; margin-left: 200px;" >Profil Sistem Bebas Tanggungan</h4>
+          <p style="color:#043873; font-size: 11px; margin-left: 200px;">
             Sistem "bebas tanggungan" adalah istilah yang biasanya merujuk pada suatu bentuk sistem
             yang tidak menuntut adanya tanggung jawab atau kewajiban yang berkelanjutan dari pihak tertentu.
             Dalam konteks administrasi, keuangan, atau hukum, sistem bebas tanggungan berarti bahwa pihak-pihak
@@ -144,11 +151,6 @@
   
   <footer class="py-3 d-flex justify-content-between">
     <div class="copyright-text">© 2024 SiBTAN JTI Polinema.</div>
-    <div>
-        <a href="#" class="me-2 text-white">Terms of Service</a>
-        <a href="#" class="me-2 text-white">Privacy Policy</a>
-        <a href="#" class="text-white">Cookies</a>
-    </div>
   </footer>
 
   <!-- Bootstrap JS -->
