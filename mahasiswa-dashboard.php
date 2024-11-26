@@ -30,7 +30,7 @@
     }
 
     .sidebar .nav-link.active, .sidebar .nav-link:hover{
-      background-color: #00509E; 
+      background-color: #FFE492; 
       color: white;
       padding: 3px 6px;
       border-radius: 8px;
@@ -43,10 +43,33 @@
       width: 80px;
       margin-top: -20px;
     }
+
+    .sidebar-footer {
+      margin-top: auto; /* Push to bottom */
+      font-size: 0.8rem;
+      text-align: center;
+      padding: 10px 0;
+      color: white;
+    }
+
+    header {
+    background-color: #CCE5FF; /* Warna biru muda */
+    text-align: center; 
+    color: #043873; /* Warna teks biru gelap */
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 15px; /* mengatur ruang didalam elemen */
+    border-radius: 40px; /* Sudut melingkar */
+    width: 80%; /* Lebar header agar proporsional */
+    margin-left: 230px;  /*memberi jarak dari sisi kiri */
+    }
+
+
     h5{
       margin-top: -20px;
       margin-left: 200px;
     }
+
     /* Main Content styling */
     .content {
       margin-left: 10px; 
@@ -58,23 +81,26 @@
 
     .hero-section {
       background: url('RuanganDashboard.png') center/cover no-repeat;
-      padding: 60px 20px;
-      border-radius: 10px;
+      padding: 100px 20px;
+      border-radius: 30px;
       margin-left: 200px;
     }
-    .hero-section h1, .hero-section p {
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    }
 
-    footer {
-      font-size: 0.8rem;
-      margin-left: 550px;
-      margin-right: auto;
-      color: grey;
-      position: relative;
-      width: 100%;
-      bottom: 0;
-    }
+    .hero-section h2 {
+    color: #FFE492; /* Warna teks */
+    text-align: center; /* Tengah */
+    font-size: 3rem; /* Ukuran font lebih besar */
+    font-weight: bold; /* Teks lebih tebal */
+  }
+
+  .hero-section p {
+    color: #FFE492;
+    font-size: 1.5rem; /* Ukuran font lebih besar */
+    font-weight: 500; /* Tebal sedang */
+  }
+    
+
+
   </style>
 </head>
 <body class="d-flex flex-column min-vh-100">
@@ -122,12 +148,15 @@
           </a>
         </li>
       </ul>
+      <div class="sidebar-footer">
+        © 2024 SiBTAN JTI Polinema.
+      </div>
     </nav>
 
     <!-- Main Content -->
     <div class="content flex-grow-1">
-      <header class="bg-light py-3 px-4 border-bottom border-top margin-left: 200px;" style="text-align: center;">
-        <h5 class="m-0">Sistem Informasi Bebas Tanggungan</h5>
+      <header>
+        Sistem Informasi Bebas Tanggungan
       </header>
       <div class="p-4">
         <div class="hero-section text-center mb-4">
@@ -137,7 +166,7 @@
         </div>
         <section class="info-section text-center">
           <h4 style="color:#043873; margin-left: 200px;" >Profil Sistem Bebas Tanggungan</h4>
-          <p style="color:#043873; font-size: 11px; margin-left: 200px;">
+          <p style="color:#043873; font-size: 14px; margin-left: 200px;">
             Sistem "bebas tanggungan" adalah istilah yang biasanya merujuk pada suatu bentuk sistem
             yang tidak menuntut adanya tanggung jawab atau kewajiban yang berkelanjutan dari pihak tertentu.
             Dalam konteks administrasi, keuangan, atau hukum, sistem bebas tanggungan berarti bahwa pihak-pihak
@@ -147,11 +176,6 @@
       </div>
     </div>
   </div>
-
-  
-  <footer class="py-3 d-flex justify-content-between">
-    <div class="copyright-text">© 2024 SiBTAN JTI Polinema.</div>
-  </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
