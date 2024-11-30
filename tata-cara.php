@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <style>
-    /* Sidebar styling */
-    .sidebar {
+      /* Sidebar styling */
+      .sidebar {
       background: linear-gradient(to bottom, #021a44, #043873, #4fa3ff); 
       color: white;
       min-width: 200px;
@@ -20,7 +20,7 @@
       height: 100vh;
       top: 0; /* ensure sidebar is aligned with the top */
       left: 0;
-      padding-top: 0.10px;
+      padding-top: 0.1px;
     }
 
     .sidebar .nav-link {
@@ -55,53 +55,55 @@
     .sidebar .nav-item {
     margin-bottom: 15px; /* Tambah jarak antar menu */
     }
-
     
     h5{
-      margin-top: -20px; /* mengatur jarak logo dan sibtan */
+      margin-top: -20px;/* mengatur jarak logo dan sibtan */
     }
 
-    header {
-    background-color: #CCE5FF; /* Warna biru muda */
-    text-align: center; 
-    color: #043873; /* Warna teks biru gelap */
-    font-size: 1.5rem;
-    font-weight: 500;
-    padding: 15px; /* mengatur ruang didalam elemen */
-    border-radius: 40px; /* Sudut melingkar */
-    width: 80%; /* Lebar header agar proporsional */
-    margin-left: 230px;  /*memberi jarak dari sisi kiri */
-    }
-
-    /* Main Content styling */
+    /* Content Styling */
     .content {
-      margin-left: 10px; 
-      width: calc(100% - 200px);
-      padding: 20px;
-     
-    }
-
-    .hero-section {
-      background: url('RuanganDashboard.png') center/cover no-repeat;
-      padding: 100px 20px;
-      border-radius: 30px;
       margin-left: 200px;
+      flex-grow: 1;
+      
     }
 
-    .hero-section h2 {
-    color: #FFE492; /* Warna teks */
-    text-align: center; /* Tengah */
-    font-size: 3rem; /* Ukuran font lebih besar */
-    font-weight: bold; /* Teks lebih tebal */
+    .content .card {
+    background-color: #CCE5FF; /* Latar biru muda */
+    border-radius: 15px; /* Sudut melingkar */
+    padding: 80px;
+    margin-top: 40px;
+    margin-left: 80px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan */
+    color: #043873; /* Teks biru gelap */
+    max-width: 1050px;
+    text-align: left;
   }
 
-  .hero-section p {
-    color: #FFE492;
-    font-size: 1.5rem; /* Ukuran font lebih besar */
-    font-weight: 500; /* Tebal sedang */
+  .content .card h1 {
+    font-weight: bold;
+    text-align: center;
+    color: #043873;
+    margin-bottom: 20px;
   }
-    
 
+  .content .card ol {
+    padding-left: 20px; /* Untuk list indent */
+    color: #043873;
+    font-size: 1.5rem;
+  }
+
+  header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #CCE5FF;
+    }
+  
+  header .user {
+    font-weight: bold;
+    color: #2B74C4;
+  }
 
   </style>
 </head>
@@ -114,9 +116,9 @@
         <h5>SiBTAN</h5>
       </div>
       <ul class="nav flex-column px-2">
-      <li class="nav-item my-2"><a href="#" class="nav-link active">Home</a></li>
+      <li class="nav-item my-2"><a href="#" class="nav-link">Home</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
-        <li class="nav-item"><a href="#" class="nav-link ">Tata Cara</a></li>
+        <li class="nav-item"><a href="#" class="nav-link active">Tata Cara</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Dataku</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Info Data</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Logout</a></li>
@@ -128,26 +130,25 @@
     </nav>
 
     <!-- Main Content -->
-    <div class="content flex-grow-1">
+    <div class="content">
       <header>
-        Sistem Informasi Bebas Tanggungan
+        <img src="logouser.jpg" alt="User Avatar" style="width: 25px; height: 25px;  border-radius: 50%;margin-right: 10px;">
+        <div class="user">Lutfi Triaswangga</div>
       </header>
-      <div class="p-4">
-        <div class="hero-section text-center mb-4">
-          <h2 style="color:#FFE492; text-align:center;" >Sistem Bebas Tanggungan</h2>
-          <p style="color:#FFE492">Jurusan Teknologi Informasi</p>
-          <!--<img src="RuanganDashboard.png" class="img-fluid rounded mx-auto d-block background-cover-img" style="max-width: 600px;" alt="Ruangan Dashboard">-->
+      <main>
+        <div class="card">
+          <h1>Tata Cara Upload:</h1>
+          <ol> 
+              <li>Persiapkan berkas yang akan di upload dan pastikan sudah benar.</li>
+              <li>Scan file dengan format pdf/png dan pastikan gambar sudah jelas</li>
+              <li>Ukuran file maks 3MB.</li>
+              <li>Pastikan file sudah terunggah dengan sukses</li>
+              <li>Setelah file sukses terunggah semua file akan di verifikasi oleh admin.
+                  Untuk verifikasi akan membutuhkan sedikit waktu lebih lama.</li>
+              <li>Mohon untuk aktif mengecek website SiBTAN setelah melakukan upload dokumen.</li>
+          </ol>
         </div>
-        <section class="info-section text-center">
-          <h4 style="color:#043873; margin-left: 200px;" >Profil Sistem Bebas Tanggungan</h4>
-          <p style="color:#043873; font-size: 14px; margin-left: 200px;">
-            Sistem "bebas tanggungan" adalah istilah yang biasanya merujuk pada suatu bentuk sistem
-            yang tidak menuntut adanya tanggung jawab atau kewajiban yang berkelanjutan dari pihak tertentu.
-            Dalam konteks administrasi, keuangan, atau hukum, sistem bebas tanggungan berarti bahwa pihak-pihak
-            yang terlibat tidak memiliki kewajiban atau hutang tertentu setelah suatu transaksi atau perjanjian selesai.
-          </p>
-        </section>
-      </div>
+      </main>
     </div>
   </div>
 
