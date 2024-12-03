@@ -43,7 +43,7 @@
     }
 
     .sidebar-footer {
-      margin-top: auto; /* Push to bottom */
+      margin-top: auto; /* mendorong ke bawah*/
       font-size: 0.8rem;
       text-align: center;
       padding: 10px 0;
@@ -53,7 +53,7 @@
     .sidebar .nav-item {
     margin-bottom: 15px; /* Tambah jarak antar menu */
     }
-
+ 
     h5{
       margin-top: -20px; /* mengatur jarak logo dan sibtan */
     }
@@ -74,7 +74,7 @@
 
     /* Content Styling */
     .content {
-      margin-left: 200px;
+      margin-left: 230px
       flex-grow: 1;
     }
 
@@ -92,19 +92,41 @@
       font-size: 26px;
     }
 
-    .info {
-      background: #F5F5F5;
-      padding: 20px 30px;
-      border-radius: 10px;
-      margin-top: 20px;
-      margin-left: 80px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      color: #043873;
-      max-width: 1050px;
+    .messages {
+      background-color: #f8f9fa;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
     }
 
-    .info li {
-      margin-bottom: 10px;
+    .messages-container {
+        background-color: #f8f9fa;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        max-height: 400px; /* Tinggi maksimum container */
+    }
+
+    .messages {
+        max-height: 300px; /* Tinggi maksimum daftar pesan */
+        padding-right: 10px; /* Beri jarak untuk scrollbar */
+    }
+
+    .message-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    }
+
+    .message-item p {
+    margin: 0;
+    }
+
+    .input-group {
+    margin-top: 20px;
     }
 
   </style>
@@ -122,9 +144,9 @@
         <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
         <li class="nav-item"><a href="#" class="nav-link ">Tata Cara</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Dataku</a></li>
-        <li class="nav-item"><a href="#" class="nav-link active ">Info Data</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Info Data</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Logout</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Call Center</a></li>
+        <li class="nav-item"><a href="#" class="nav-link active">Call Center</a></li>
       </ul>
       <div class="sidebar-footer">
         © 2024 SiBTAN JTI Polinema.
@@ -139,25 +161,47 @@
       </header>
       <main>
         <div class="title-with-icon">
-          <img src="img/logoinfodata.jpg" alt="Info Icon" style="width: 40px; height: 40px;  border-radius: 50%;margin-right: 10px;">
-          <h1 class="page-title">INFO DATA</h1>
+          <img src="img/logocallcenter.jpg" alt="Info Icon" style="width: 40px; height: 40px;  border-radius: 50%;margin-right: 10px;">
+          <h1 class="page-title">INFO CALL CENTER</h1>
         </div>
-        <div class="info">
-          <ol>
-            <li>Berkas yang akan di-upload sudah mendapat ACC dari dosen atau admin terkait.</li>
-            <li>Persiapkan berkas yang akan di-upload dan pastikan sudah benar.</li>
-            <li>Scan file dengan format PDF/PNG dan pastikan gambar sudah jelas.</li>
-            <li>Ukuran file maks 3MB.</li>
-            <li>Pastikan file sudah terunggah dengan sukses.</li>
-            <li>Setelah file sukses terunggah, semua file akan diverifikasi oleh admin. Untuk verifikasi akan membutuhkan sedikit waktu lebih lama.</li>
-            <li>Mohon untuk aktif mengecek website SiBTaN setelah melakukan upload dokumen.</li>
-            <li>Pemberitahuan!</li>
-            <li>Diwajibkan mengunggah foto formal pada masing-masing akun.</li>
-            <li>Diberitahukan kepada seluruh mahasiswa bahwa data syarat untuk pengajuan surat bebas tanggungan dapat diunggah di website SiBTaN adalah daftar kegiatan yang diikuti selama masa studi di Politeknik Negeri Malang.</li>
-            <li>Pertanyaan lebih lanjut dapat menghubungi call center pada website SiBTaN.</li>
-            <li>Untuk upload scan TOEIC dengan skor minimal 450 untuk Diploma 4. Apabila sudah mengikuti 1x tes gratis Polinema dan 1x ujian mandiri berbayar namun nilai masih kurang,
-              maka akan diberikan surat keterangan dari UPA Bahasa (Grapol Lantai 3).</li>
-          </ol>
+        <div class="cointainer mt-4">
+            <div class="row">
+                <!-- Bagian pesan -->
+                <div class="col-md-8">
+                <div class="messages-container">
+                    <p class="text-muted">Show 20 Previous Message</p>
+                    <div class="messages">
+                    <div class="message-item mb-3 d-flex align-items-start">
+                        <img src="img/logouser.jpg" alt="User Avatar" class="rounded-circle" style="width: 40px; height: 40px; margin-right: 10px;">
+                        <div>
+                        <div class="fw-bold">Lutfi Triaswangga</div>
+                        <small class="text-muted">27 Oktober 2024 20.05</small>
+                        <p>ini bagaimana ya kok saya belum di verifikasi?</p>
+                        </div>
+                        <button class="btn btn-sm btn-primary ms-auto">Reply</button>
+                    </div>
+                    <!-- Salin div .message-item untuk mengulang pesan -->
+                    <div class="message-item mb-3 d-flex align-items-start">
+                        <img src="img/logouser.jpg" alt="User Avatar" class="rounded-circle" style="width: 40px; height: 40px; margin-right: 10px;">
+                        <div>
+                        <div class="fw-bold">Lutfi Triaswangga</div>
+                        <small class="text-muted">27 Oktober 2024 20.05</small>
+                        <p>ini bagaimana ya kok saya belum di verifikasi?</p>
+                        </div>
+                        <button class="btn btn-sm btn-primary ms-auto">Reply</button>
+                    </div>
+                    </div>
+                </div>
+                    <div class="input-group mt-3">
+                        <input type="text" class="form-control" placeholder="Ketikkan Pesan">
+                        <button class="btn btn-primary">Kirim</button>
+                    </div>
+                </div>
+                <!-- Bagian gambar -->
+                <div class="col-md-4">
+                    <img src="building.jpg" alt="Gedung" class="img-fluid rounded">
+                </div>
+            </div>
         </div>
       </main>
     </div>

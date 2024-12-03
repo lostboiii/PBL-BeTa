@@ -18,8 +18,6 @@
       flex-direction: column;
       position: fixed;
       height: 100vh;
-      top: 0; /* ensure sidebar is aligned with the top */
-      left: 0;
       padding-top: 0.1px;
     }
 
@@ -112,7 +110,7 @@
     <!-- Sidebar -->
     <nav class="sidebar">
       <div class="text-center py-4">
-        <img src="designLogo.png" alt="Logo SiBTAN" class="logo mb-1">
+        <img src="img/designLogo.png" alt="Logo SiBTAN" class="logo mb-1">
         <h5>SiBTAN</h5>
       </div>
       <ul class="nav flex-column px-2">
@@ -132,7 +130,7 @@
     <!-- Main Content -->
     <div class="content">
       <header>
-        <img src="logouser.jpg" alt="User Avatar" style="width: 25px; height: 25px;  border-radius: 50%;margin-right: 10px;">
+        <img src="img/logouser.jpg" alt="User Avatar" style="width: 25px; height: 25px;  border-radius: 50%;margin-right: 10px;">
         <div class="user">Lutfi Triaswangga</div>
       </header>
       <main>

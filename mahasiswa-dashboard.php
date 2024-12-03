@@ -18,8 +18,6 @@
       flex-direction: column;
       position: fixed;
       height: 100vh;
-      top: 0; /* ensure sidebar is aligned with the top */
-      left: 0;
       padding-top: 0.10px;
     }
 
@@ -82,7 +80,7 @@
     }
 
     .hero-section {
-      background: url('RuanganDashboard.png') center/cover no-repeat;
+      background: url('img/RuanganDashboard.png') center/cover no-repeat;
       padding: 100px 20px;
       border-radius: 30px;
       margin-left: 200px;
@@ -110,7 +108,7 @@
     <!-- Sidebar -->
     <nav class="sidebar">
       <div class="text-center py-4">
-        <img src="designLogo.png" alt="Logo SiBTAN" class="logo mb-1">
+        <img src="img/designLogo.png" alt="Logo SiBTAN" class="logo mb-1">
         <h5>SiBTAN</h5>
       </div>
       <ul class="nav flex-column px-2">
@@ -136,7 +134,7 @@
         <div class="hero-section text-center mb-4">
           <h2 style="color:#FFE492; text-align:center;" >Sistem Bebas Tanggungan</h2>
           <p style="color:#FFE492">Jurusan Teknologi Informasi</p>
-          <!--<img src="RuanganDashboard.png" class="img-fluid rounded mx-auto d-block background-cover-img" style="max-width: 600px;" alt="Ruangan Dashboard">-->
+          <!--<img src="img/RuanganDashboard.png" class="img-fluid rounded mx-auto d-block background-cover-img" style="max-width: 600px;" alt="Ruangan Dashboard">-->
         </div>
         <section class="info-section text-center">
           <h4 style="color:#043873; margin-left: 200px;" >Profil Sistem Bebas Tanggungan</h4>
