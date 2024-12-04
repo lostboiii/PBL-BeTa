@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SiBTAN - Dataku</title>
+    <title>Sistem Informasi Bebas Tanggungan</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f8fc;
-        }
-
+        /* Sidebar styling */
         .sidebar {
-            width: 200px;
-            background-color: #203864;
-            color: #fff;
-            height: 100vh;
-            position: fixed;
+            background: linear-gradient(to bottom, #021a44, #043873, #4fa3ff);
+            color: white;
+            min-width: 200px;
+            max-width: 200px;
             display: flex;
             flex-direction: column;
-            padding-top: 20px;
+            position: fixed;
+            height: 100vh;
+            padding-top: 0.1px;
         }
 
-        .sidebar a {
-            color: #fff;
-            text-decoration: none;
-            padding: 15px 20px;
-            display: block;
-        }
-
-        .sidebar a:hover, .sidebar a.active {
-            background-color: #2b4d90;
-        }
-
-        .content {
-            margin-left: 200px;
-            padding: 20px;
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #f4f8fc;
+        .sidebar .nav-link {
+            color: white;
+            font-weight: 500;
             padding: 10px 20px;
-            border-bottom: 1px solid #dcdcdc;
         }
 
-        .header img {
-            width: 40px;
-            margin-right: 10px;
+        .sidebar .nav-link.active,
+        .sidebar .nav-link:hover {
+            background-color: #FFE492;
+            color: white;
+            padding: 3px 6px;
+            border-radius: 8px;
+            font-size: 15px;
+            margin-top: -4px;
+            margin-bottom: -1px;
+
+        }
+
+        .sidebar .logo {
+            width: 80px;
+            margin-top: -20px;
+        }
+
+        .sidebar-footer {
+            margin-top: auto;
+            /* Push to bottom */
+            font-size: 0.8rem;
+            text-align: center;
+            padding: 10px 0;
+            color: white;
+        }
+
+        .sidebar .nav-item {
+            margin-bottom: 15px;
+            /* Tambah jarak antar menu */
+        }
+
+        h5 {
+            margin-top: -20px;
+            /* mengatur jarak logo dan sibtan */
         }
 
         .card-container {
@@ -121,26 +132,43 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+
+        header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #CCE5FF;
+        }
+
+        header .user {
+            font-weight: bold;
+            color: #2B74C4;
+        }
     </style>
 </head>
-<body>
-    <div class="sidebar">
-        <a href="#">Home</a>
-        <a href="#">Profile</a>
-        <a href="#">Tata Cara</a>
-        <a href="#" class="active">Dataku</a>
-        <a href="#">Info Data</a>
-        <a href="#">Logout</a>
-        <a href="#">Call Center</a>
-    </div>
 
-    <div class="content">
-        <div class="header">
-            <h1>SiBTAN</h1>
-            <div>
-                <span>Lutfi Triaswangga</span>
+<body class="d-flex flex-column min-vh-100">
+    <div class="d-flex flex-grow-1">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="text-center py-4">
+                <img src="img/designLogo.png" alt="Logo SiBTAN" class="logo mb-1">
+                <h5>SiBTAN</h5>
             </div>
-        </div>
+            <ul class="nav flex-column px-2">
+                <li class="nav-item my-2"><a href="DashboardAdmJurusan.php" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="ProfileAdmJurusan.php" class="nav-link">Profile</a></li>
+                <li class="nav-item"><a href="TataCaraAdmJurusan.php" class="nav-link active">Tata Cara</a></li>
+                <li class="nav-item"><a href="DatakuAdmJurusan.php" class="nav-link">Dataku</a></li>
+                <li class="nav-item"><a href="InfoAdmJurusan.php" class="nav-link">Info Data</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Logout</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Call Center</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                © 2024 SiBTAN JTI Polinema.
+            </div>
+        </nav>
 
         <div class="description">
             <p>Berikut ini adalah tabel data milik anda.<br>
@@ -197,10 +225,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>  
 
-    <footer>
-        <p>© 2024 SiBTAN JTI Polinema. <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a> | <a href="#">Cookies</a></p>
-    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
