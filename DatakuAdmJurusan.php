@@ -28,7 +28,6 @@
             padding: 10px 20px;
         }
 
-        .sidebar .nav-link.active,
         .sidebar .nav-link:hover {
             background-color: #FFE492;
             color: white;
@@ -37,6 +36,12 @@
             font-size: 15px;
             margin-top: -4px;
             margin-bottom: -1px;
+
+        }
+
+        .content {
+            margin-left: 200px;
+            flex-grow: 1;
 
         }
 
@@ -64,6 +69,25 @@
             /* mengatur jarak logo dan sibtan */
         }
 
+        header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #CCE5FF;
+        }
+
+        header .user {
+            font-weight: bold;
+            color: #2B74C4;
+        }
+        .description {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
         .card-container {
             display: flex;
             flex-wrap: wrap;
@@ -108,43 +132,6 @@
         .status .reject {
             background-color: #dc3545;
         }
-
-        footer {
-            background-color: #203864;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        footer a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .description {
-            margin-bottom: 20px;
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        header {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #CCE5FF;
-        }
-
-        header .user {
-            font-weight: bold;
-            color: #2B74C4;
-        }
     </style>
 </head>
 
@@ -170,17 +157,15 @@
             </div>
         </nav>
 
-        <div class="description">
-            <p>Berikut ini adalah tabel data milik anda.<br>
-            Untuk <b>menambahkan data</b> persyaratan baru klik tombol tambah file. Lalu klik upload. Untuk <b>melihat status</b> data persyaratan klik tombol pada kolom STATUS. Dan untuk <b>mencetak data poin</b> ini klik tombol Cetak Form. Proses verifikasi dan validasi data poin meliputi tahap:</p>
-            <ol>
-                <li>Verifikasi oleh Admin Prodi</li>
-                <li>Verifikasi oleh Admin Jurusan</li>
-            </ol>
+        <!-- Main Content -->
+        <div class="content">
+            <header>
+                <img src="img/logouser.jpg" alt="User Avatar" style="width: 25px; height: 25px;  border-radius: 50%;margin-right: 10px;">
+                <div class="user">Lutfi Triaswangga</div>
+            </header>
         </div>
 
-        <button style="margin-bottom: 20px; padding: 10px 20px; background-color: #2b4d90; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Cetak Form</button>
-
+        
         <div class="card-container">
             <div class="card">
                 <h3>Alat / Program / Aplikasi</h3>
@@ -225,10 +210,9 @@
                 </div>
             </div>
         </div>
-    </div>  
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
