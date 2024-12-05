@@ -114,13 +114,13 @@
         <h5>SiBTAN</h5>
       </div>
       <ul class="nav flex-column px-2">
-        <li class="nav-item my-2"><a href="DashboardAdmJurusan.php" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="ProfileAdmJurusan.php" class="nav-link">Profile</a></li>
+      <li class="nav-item my-2"><a href="DashboardAdmJurusan.php" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
         <li class="nav-item"><a href="TataCaraAdmJurusan.php" class="nav-link active">Tata Cara</a></li>
-        <li class="nav-item"><a href="DatakuAdmJurusan.php" class="nav-link">Dataku</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Dataku</a></li>
         <li class="nav-item"><a href="InfoAdmJurusan.php" class="nav-link">Info Data</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Logout</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Call Center</a></li>
+        <li class="nav-item"><a href="CallAdmJurusan.php" class="nav-link">Call Center</a></li>
       </ul>
       <div class="sidebar-footer">
         © 2024 SiBTAN JTI Polinema.
