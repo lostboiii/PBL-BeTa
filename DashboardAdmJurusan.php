@@ -28,15 +28,12 @@
     }
 
     .sidebar .nav-link.active, .sidebar .nav-link:hover{
-      background-color: #FFE492; 
-      color: white;
-      padding: 3px 6px;
-      border-radius: 8px;
-      font-size: 15px;
-      margin-top: -4px;
-      margin-bottom: -1px;
-      
+        background-color: #FFE492; 
+        color: white;
+        border-radius: 8px;
+        font-size: 15px;
     }
+    
     .sidebar .logo {
       width: 80px;
       margin-top: -20px;
